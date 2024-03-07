@@ -31,7 +31,7 @@ export default function Home() {
       </section>
 
       <Link href="#hero">
-      <footer className="sticky bottom-5 w-full cursor-pointer">
+      <footer className="sticky bottom-5 w-full cursor-pointer pb-[110px]">
           <div className="flex items-center justify-center">
             <Image
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
