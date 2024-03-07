@@ -6,7 +6,6 @@ import Projects from "@/components/Projects";
 import Image from "next/image";
 import mariaInRed from "@/images/girlinred.jpg";
 import Link from "next/link";
-import Touring from "@/components/touring";
 
 type Props = {
   socials: Social[];
@@ -29,10 +28,6 @@ export default function Home() {
       
       <section id="projects" className="snap-center">
         <Projects />
-      </section>
-
-      <section id='touring' className="snap-center py-[22px] md:-[44px] lg:py-[88px] ">
-        <Touring />
       </section>
 
       <Link href="#hero">
