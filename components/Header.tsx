@@ -41,16 +41,16 @@ function Header({} : Props) {
                 fgColor="#ddd4c6"
                 bgColor="transparent"
             />
-            <SocialIcon 
+            {/* <SocialIcon 
                 url="https://x.com/_girlinred_"
                 fgColor="#ddd4c6"
                 bgColor="transparent"
-            />
-            <SocialIcon 
+            /> */}
+            {/* <SocialIcon 
                 url="https://www.facebook.com/girlinred/"
                 fgColor="#ddd4c6"
                 bgColor="transparent"
-            />
+            /> */}
         </motion.div>
         <motion.div 
             initial={{
@@ -77,12 +77,12 @@ function Header({} : Props) {
                 bgColor="transparent"
                 url="https://music.apple.com/us/artist/girl-in-red/1349818950"
             />
-            <SocialIcon 
+            {/* <SocialIcon 
                 className="cursor-pointer"
                 fgColor="#ddd4c6"
                 bgColor="transparent"
                 url="https://soundcloud.com/lyfsuxx"
-            />
+            /> */}
             <Link href="https://us.shopgirlinred.com/" className='pl-6'>
                 <div className={montserrat.className}>
                     <p className="lowercase hidden md:inline-flex text-sm tracking-[4px] text-[#ddd4c6]">shop</p>

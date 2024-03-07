@@ -2,6 +2,11 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Social } from "@/typings";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Image from "next/image";
+import mariaInRed from "@/images/girlinred.jpg";
+import Link from "next/link";
+import Touring from "@/components/touring";
 
 type Props = {
   socials: Social[];
@@ -22,7 +27,25 @@ export default function Home() {
         <About />
       </section>
       
+      <section id="projects" className="snap-center">
+        <Projects />
+      </section>
 
+      <section id='touring' className="snap-center py-[22px] md:-[44px] lg:py-[88px] ">
+        <Touring />
+      </section>
+
+      <Link href="#hero">
+      <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <Image
+              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              src={mariaInRed}
+              alt="Girl in Red"
+            />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }

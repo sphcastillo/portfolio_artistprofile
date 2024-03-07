@@ -18,7 +18,7 @@ function About() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5}}
         >
-            <h3 className="absolute top-24 uppercase tracking-[20px] text-[#ddd4c6] text-2xl">About</h3>
+            <h3 className="absolute top-24 uppercase tracking-[20px] text-[#ddd4c6] text-2xl pb-2">About</h3>
 
             <motion.div
                 initial={{
@@ -27,7 +27,7 @@ function About() {
                 transition={{ duration: 1.2}}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] "
+                className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 md:w-60 md:h-92 xl:w-[460px] xl:h-[460px] "
             >
                 <Image src={girlinred} alt="girl in red" className="rounded-full md:rounded-lg object-cover"/>
             </motion.div>
