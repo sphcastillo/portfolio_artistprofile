@@ -29,7 +29,7 @@ function About() {
                 viewport={{ once: true }}
                 className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 md:w-60 md:h-92 xl:w-[460px] xl:h-[460px] "
             >
-                <Image src={girlinred} alt="girl in red" className="rounded-full md:rounded-lg object-cover"/>
+                <Image src={girlinred} alt="girl in red" priority className="rounded-full md:rounded-lg object-cover"/>
             </motion.div>
 
             <div className="space-y-10 px-0 md:px-10 text-text-[#ddd4c6] pt-2">

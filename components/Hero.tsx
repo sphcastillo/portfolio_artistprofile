@@ -23,6 +23,7 @@ function Hero({} : Props) {
                 src={marie}
                 alt='Marie Ulven Ringheim'
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
+                priority
             />
             <div>
                 <div className={montserrat.className}>
