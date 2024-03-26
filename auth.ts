@@ -1,7 +1,11 @@
 import SpotifyProvider from "next-auth/providers/spotify";
 import spotifyApi, { LOGIN_URL } from "./lib/spotify";
-import NextAuth, { NextAuthOptions } from "next-auth";
-
+import NextAuth, { NextAuthOptions, getServerSession } from "next-auth";
+import type {
+    GetServerSidePropsContext,
+    NextApiRequest,
+    NextApiResponse,
+  } from "next";
 interface CustomToken {
     accessToken: string;
     shinyRefreshedToken: string;
@@ -81,3 +85,12 @@ export const authOptions: NextAuthOptions = {
 };
 
 export default NextAuth(authOptions);
+
+export function auth(
+    ...args:
+      | [GetServerSidePropsContext["req"], GetServerSidePropsContext["res"]]
+      | [NextApiRequest, NextApiResponse]
+      | []
+  ) {
+    return getServerSession(...args, authOptions);
+  }
