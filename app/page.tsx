@@ -6,6 +6,9 @@ import Projects from "@/components/Projects";
 import Image from "next/image";
 import mariaInRed from "@/images/girlinred.jpg";
 import Link from "next/link";
+import Spotify from "@/components/Spotify";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/auth";
 
 type Props = {
   socials: Social[];
@@ -13,7 +16,9 @@ type Props = {
 
 
 
-export default function Home() {
+async function Home() {
+  const session =  await getServerSession(authOptions);
+  console.log("Spotify session: ", session);
   return (
     <div className="bg-[#400000] text-[#ddd4c6] h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Header />
@@ -30,6 +35,10 @@ export default function Home() {
         <Projects />
       </section>
 
+      <section id="contact" className="snap-center">
+        <Spotify session={session}/>
+      </section>
+
       <Link href="#hero">
       <footer className="sticky bottom-5 w-full cursor-pointer pb-[110px]">
           <div className="flex items-center justify-center">
@@ -44,3 +53,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
