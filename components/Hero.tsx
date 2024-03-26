@@ -5,6 +5,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import marie from "@/images/girlinred.jpg";
+import Link from 'next/link';
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -19,12 +20,14 @@ function Hero({} : Props) {
     return (
         <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
             <BackgroundCircles />
+            <Link href='/'>
             <Image 
                 src={marie}
                 alt='Marie Ulven Ringheim'
                 className="relative rounded-full h-32 w-32 mx-auto object-cover"
                 priority
             />
+            </Link>
             <div>
                 <div className={montserrat.className}>
                     <h2 className="text-sm lowercase text-[#ddd4c6] pb-2 tracking-[12px]">girl in red</h2>
