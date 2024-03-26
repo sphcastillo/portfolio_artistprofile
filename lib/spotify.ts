@@ -32,7 +32,7 @@ const LOGIN_URL = "https://accounts.spotify.com/authorize?"  + queryParamString.
 console.log("LOGIN_URL: ",LOGIN_URL);
 
 // use said library above
-// configure our Spotify API ibject
+// configure our Spotify API object
 const spotifyApi = new SpotifyWebApi({
     clientId: process.env.SPOTIFY_CLIENT_ID,
     clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
