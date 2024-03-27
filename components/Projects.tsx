@@ -26,9 +26,9 @@ const music =  [
     },
     {
         id: 1,
-        title: "if i could make tt go quiet",
+        title: "if i could make it go quiet",
         image: makeitGoQuiet,
-        alt: "if i could make tt go quiet",
+        alt: "if i could make it go quiet",
     },
     {
         id: 2,  
@@ -90,11 +90,11 @@ function Projects() {
                     viewport={{ once: true }}
                     className="w-screen flex flex-col space-y-5 items-center justify-center flex-shrink-0 snap-center p-20 md:p-44 h-screen">
                     <Link href="/">
-                    <div  className="md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-96 md:h-124 xl:w-[500px] xl:h-[300px] object-contain cursor-pointer">
-                        <Image src={item.image} alt={item.alt} priority className="object-fill"/>
-                    </div>
+                        <div  className="md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-96 md:h-124 xl:w-[500px] xl:h-[300px] object-contain cursor-pointer">
+                            <Image src={item.image} alt={item.alt} priority className="object-fill"/>
+                        </div>
                     </Link>
-                    <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+                    <div className="space-y-10 px-0 md:px-10 max-w-6xl pt-[155px] lg:pt-[195px]">
                         <div className={montserrat.className}>
                             <h4 className="text-2xl font-semibold text-center text-[#ddd4c6] tracking-[2px]">
                                 {item.title}
