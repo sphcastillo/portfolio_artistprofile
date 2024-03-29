@@ -7,18 +7,14 @@ import Image from "next/image";
 import mariaInRed from "@/images/girlinred.jpg";
 import Link from "next/link";
 import Spotify from "@/components/Spotify";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/auth";
 
 
 type Props = {
   socials: Social[];
 };
 
+function Home() {
 
-
-async function Home() {
-  // const session = await getServerSession(authOptions);
   return (
     <div className="bg-[#400000] text-[#ddd4c6] h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Header />
@@ -36,7 +32,7 @@ async function Home() {
       </section>
 
       <section id="contact" className="snap-center">
-        {/* <Spotify session={session}/> */}
+        <Spotify />
       </section>
 
       <Link href="#hero">

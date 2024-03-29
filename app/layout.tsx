@@ -20,14 +20,14 @@ export default function RootLayout(
     }
   >) {
   return (
-
+    <ClientProviders>
       <html lang="en">
         <body className={inter.className}>
-          <ClientProviders>
+
           {children}
-          </ClientProviders>
+
         </body>
       </html>
-
+    </ClientProviders>
   );
 }

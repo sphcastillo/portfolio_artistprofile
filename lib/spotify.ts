@@ -18,19 +18,18 @@ const scopes = [
 //, - putting all of these in a value string and then passing it to the URLSearchParams constructor 
 
 
-const params =  {
-    scope: scopes,
-};
-
-// pass params to the end of the string
 // creates an object that we can use to create a query string
-const queryParamString = new URLSearchParams(params);
+const queryParamString = new URLSearchParams({
+    client_id: process.env.SPOTIFY_CLIENT_ID!,
+    redirect_uri: process.env.REDIRECT_URI!,
+    scope: scopes,
+    response_type: "code"
+});
 
 
 const LOGIN_URL = "https://accounts.spotify.com/authorize?"  + queryParamString.toString();
 
 
-// use said library above
 // configure our Spotify API object
 const spotifyApi = new SpotifyWebApi({
     clientId: process.env.SPOTIFY_CLIENT_ID,
