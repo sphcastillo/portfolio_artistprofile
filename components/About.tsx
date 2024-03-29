@@ -18,7 +18,7 @@ function About() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5}}
         >
-            <h3 className="absolute top-24 uppercase tracking-[20px] text-[#ddd4c6] text-2xl pb-2">About</h3>
+            <h3 className="absolute top-14 sm:top-24 uppercase tracking-[20px] text-[#ddd4c6] text-2xl pb-2">About</h3>
 
             <motion.div
                 initial={{
