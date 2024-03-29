@@ -94,7 +94,7 @@ function Projects() {
                             <Image src={item.image} alt={item.alt} priority className="object-fill"/>
                         </div>
                     </Link>
-                    <div className="space-y-10 px-0 md:px-10 max-w-6xl pt-[155px] lg:pt-[195px]">
+                    <div className="space-y-10 px-0 md:px-10 max-w-6xl pt-[55px] lg:pt-[195px]">
                         <div className={montserrat.className}>
                             <h4 className="text-2xl font-semibold text-center text-[#ddd4c6] tracking-[2px]">
                                 {item.title}

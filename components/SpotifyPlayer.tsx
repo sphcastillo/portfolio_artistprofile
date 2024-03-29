@@ -15,7 +15,7 @@ function SpotifyPlayer() {
 
     return (
         <div className='flex justify-center'>
-            <div className="w-full sm:w-3/4 h-24 bg-gradient-to-b from-black to-gray-900 text-white grid grid-cols-3 text-xs md:text-base px-2 md:px-8">
+            <div className="w-4/5 sm:w-3/4 h-24 bg-gradient-to-b from-black to-gray-900 text-white grid grid-cols-3 text-xs md:text-base px-2 md:px-8">
                 {/* Left */}
                 <div className="flex items-center space-x-4">
                     <Image 
