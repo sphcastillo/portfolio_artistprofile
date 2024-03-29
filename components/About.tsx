@@ -18,7 +18,7 @@ function About() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5}}
         >
-            <h3 className="absolute top-14 sm:top-24 uppercase tracking-[20px] text-[#ddd4c6] text-2xl pb-2">About</h3>
+            <h3 className="absolute top-4 sm:top-24 uppercase tracking-[20px] text-[#ddd4c6] text-2xl pb-2">About</h3>
 
             <motion.div
                 initial={{
@@ -32,7 +32,7 @@ function About() {
                 <Image src={girlinred} alt="girl in red" priority className="rounded-full md:rounded-lg object-cover"/>
             </motion.div>
 
-            <div className="space-y-10 px-0 md:px-10 text-text-[#ddd4c6] pt-2">
+            <div className="space-y-10 px-0 md:px-10 text-text-[#ddd4c6] sm:pt-2">
                 <h4 className="text-3xl font-semibold"> WHERE IT{" "}
                     <span className="decoration-text-[#ddd4c6]/50 underline">ALL</span>{" "}STARTED
                 </h4>
