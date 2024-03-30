@@ -1,14 +1,10 @@
 'use client'
-import { signIn, signOut, useSession } from "next-auth/react";
+import { signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import SpotifyPlayer from "./SpotifyPlayer";
-import SpotifyWebApi from "spotify-web-api-node";
 
-
-function Spotify() {
-    const { data: session } = useSession();
-    console.log("Session:", session);
-
+function Spotify({session}: {session: any}) {
+    console.log("Spotify component session: ", session);
     if (!session) {
         return (
             <div className="flex justify-center pb-[80px]">
