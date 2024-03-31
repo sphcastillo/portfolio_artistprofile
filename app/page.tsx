@@ -1,4 +1,3 @@
-'use client'
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import { Social } from "@/typings";
@@ -7,16 +6,15 @@ import Projects from "@/components/Projects";
 import Image from "next/image";
 import mariaInRed from "@/images/girlinred.jpg";
 import Link from "next/link";
-import Spotify from "@/components/Spotify";
-import { useSession } from "next-auth/react";
-
+import EmbedArtist from "@/components/EmbedArtist";
 
 type Props = {
   socials: Social[];
 };
 
-function Home() {
-  const { data: session } = useSession();
+
+async function Home() {
+
   return (
     <div className="bg-[#400000] text-[#ddd4c6] h-screen snap-y snap-mandatory overflow-scroll z-0">
       <Header />
@@ -33,9 +31,10 @@ function Home() {
         <Projects />
       </section>
 
-      <section id="contact" className="snap-center">
-        <Spotify session={session}/>
+      <section id='embedArtist' className='snap-center'>
+        <EmbedArtist />
       </section>
+
 
       <Link href="#hero">
       <footer className="sticky bottom-5 w-full cursor-pointer pb-[110px]">
