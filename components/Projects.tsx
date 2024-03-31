@@ -88,7 +88,7 @@ function Projects() {
                     transition={{ duration: 1.2}}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="w-screen flex flex-col space-y-5 items-center justify-center flex-shrink-0 snap-center p-20 md:p-44 h-screen">
+                    className="w-screen flex flex-col space-y-5 items-center justify-center flex-shrink-0 snap-center p-7 sm:p-20 md:p-44 h-screen">
                     <Link href="/">
                         <div  className="md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-96 md:h-124 xl:w-[500px] xl:h-[300px] object-contain cursor-pointer">
                             <Image src={item.image} alt={item.alt} priority className="object-fill"/>
