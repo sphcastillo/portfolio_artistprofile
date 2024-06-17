@@ -77,10 +77,11 @@ function Projects() {
         className="flex relative overflow-hidden flex-col text-left md:flex-row max-w-full h-screen justify-evenly mx-auto items-center z-0"
     >
         <h3 className="absolute top-24 lowercase tracking-[20px] text-[#ddd4c6] text-2xl">
-            Music
+            Music 
         </h3>
+        <h4 className="absolute top-32 lowercase tracking-[10px] text-[#ddd4c6] text-xl">[Scroll Right, BABY!]</h4>
 
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-[#ddd4c6] scrollbar-thumb-[#D1001F]/80">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-white scrollbar-thumb-[#D1001F]/80">
             {music.map((item) => (
                 <motion.div 
                     key={item.id} 
@@ -88,7 +89,7 @@ function Projects() {
                     transition={{ duration: 1.2}}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="w-screen flex flex-col space-y-5 items-center justify-center flex-shrink-0 snap-center p-10 sm:p-20 md:p-44 h-screen">
+                    className="w-screen flex flex-col space-y-3 items-center justify-center flex-shrink-0 snap-center pt-[40px] sm:pt-[80px] md:pt-[65px] h-screen">
                     <Link href="/">
                         <div  className="md:mb-0 flex-shrink-0 w-56 h-56 rounded-full md:rounded-lg md:w-96 md:h-124 xl:w-[500px] xl:h-[300px] object-contain cursor-pointer">
                             <Image src={item.image} alt={item.alt} priority className="object-fill"/>

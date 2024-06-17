@@ -8,9 +8,9 @@ import mariaInRed from "@/images/girlinred.jpg";
 import Link from "next/link";
 import EmbedArtist from "@/components/EmbedArtist";
 
-type Props = {
-  socials: Social[];
-};
+// type Props = {
+//   socials: Social[];
+// };
 
 
 async function Home() {
